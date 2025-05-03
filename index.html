@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 검색 사이트</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 class="page-title">MOVIE RECOMMENDATION</h1>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="영화 검색" />
+        <div id="live-search-container"></div>
+        <button id="searchButton">검색</button>
+        <button id="likedListButton">좋아요한 목록 보기</button>
+    </div>
+    <div class="movie-container" id="movieContainer"></div>
+
+    <script type="module" src="ui-update.js"></script>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="modal-close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+</body>
+
+</html>
